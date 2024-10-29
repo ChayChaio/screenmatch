@@ -16,11 +16,11 @@ Este proyecto permite cargar y gestionar una base de datos de **series** utiliza
    Debes ingresarla en el archivo `Principal.java`:
    ```java
    private static final String API_KEY_OMDB = "TU-API-KEY";
-2. **OpenAI:**
-    Debes ingresarla en el archivo `ConsultaChatGPT.java`:
-```java
-private static final String API_KEY = "TU-API-KEY";
-```
+2. **OpenAI:**  
+   Debes ingresarla en el archivo `ConsultaChatGPT.java`:
+   ```java
+   private static final String API_KEY = "TU-API-KEY";
+   ```
 
 **Uso con el Frontend**
 - Archivo principal: `ScreenmatchApplication.java`
