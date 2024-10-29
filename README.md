@@ -29,25 +29,26 @@ Este proyecto permite cargar y gestionar una base de datos de **series** utiliza
 Nota:
 Si la base de datos no se ha llenado correctamente con ScreenmatchApplicationConsola.java, la aplicación web no podrá acceder a los datos necesarios para funcionar.
 
-Estructura del Frontend
-El frontend se encuentra en la carpeta screenmatch-frontend e incluye los siguientes archivos:
-HTML:
-index.html: Página de inicio.
-detalles.html: Página de detalles de una serie.
-CSS:
-styles.css: Estilos generales.
-css/home.css: Estilos específicos para la página principal.
-css/detalhes.css: Estilos para los detalles de las series.
-JavaScript:
-scripts/index.js: Lógica de la página principal.
-scripts/series.js: Gestión de datos de las series.
-scripts/getDatos.js: Consulta de datos desde la API.
-Requisitos Previos
-Java 8 o superior instalado.
-Acceso a Internet para consumir las APIs de OMDB y OpenAI.
-API Keys:
-OMDB
-OpenAI
+**Estructura del Frontend**
+- El frontend se encuentra en la carpeta screenmatch-frontend e incluye los siguientes archivos:
+   - HTML:
+      - `index.html`: Página de inicio.
+      - `detalles.html`: Página de detalles de una serie.
+   - CSS:
+      - `styles.css`: Estilos generales.
+      - `css/home.css`: Estilos específicos para la página principal.
+      - `css/detalhes.css`: Estilos para los detalles de las series.
+   - JavaScript:
+      - `scripts/index.js`: Lógica de la página principal.
+      - `scripts/series.js`: Gestión de datos de las series.
+      - `scripts/getDatos.js`: Consulta de datos desde la API.
+
+**Requisitos Previos**
+- Java 8 o superior instalado.
+- Acceso a Internet para consumir las APIs de OMDB y OpenAI.
+- API Keys:
+      - OMDB
+      - OpenAI
 Instrucciones de Uso
 1. Configuración de las API Keys
 En Principal.java, ingresa tu API key de OMDB.
