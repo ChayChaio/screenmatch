@@ -27,7 +27,7 @@ Este proyecto permite cargar y gestionar una base de datos de **series** utiliza
 - Este archivo gestiona la conexión entre el backend y el frontend.
 
 Nota:
-Si la base de datos no se ha llenado correctamente con ScreenmatchApplicationConsola.java, la aplicación web no podrá acceder a los datos necesarios para funcionar.
+Si la base de datos no se ha llenado correctamente con `ScreenmatchApplicationConsola.java`, la aplicación web no podrá acceder a los datos necesarios para funcionar.
 
 **Estructura del Frontend**
 - El frontend se encuentra en la carpeta screenmatch-frontend e incluye los siguientes archivos:
@@ -49,38 +49,43 @@ Si la base de datos no se ha llenado correctamente con ScreenmatchApplicationCon
 - API Keys:
       - OMDB
       - OpenAI
-Instrucciones de Uso
+
+**Instrucciones de Uso**
 1. Configuración de las API Keys
-En Principal.java, ingresa tu API key de OMDB.
-En ConsultaChatGPT.java, ingresa tu API key de OpenAI.
+   - En `Principal.java`, ingresa tu API key de OMDB.
+   - En `ConsultaChatGPT.java`, ingresa tu API key de OpenAI.
+
 2. Ejecución desde la Consola
-Compila ScreenmatchApplicationConsola.java:
-bash
-Copiar código
+   - Compila `ScreenmatchApplicationConsola.java`:
+```bash
 javac ScreenmatchApplicationConsola.java
-Ejecuta:
-bash
-Copiar código
+```
+
+- Ejecuta:
+```bash
 java ScreenmatchApplicationConsola
+```
+
 3. Verificación de los Datos Cargados
-Asegúrate de que la base de datos tiene las series cargadas antes de proceder al frontend.
+- Asegúrate de que la base de datos tiene las series cargadas antes de proceder al frontend.
 
 4. Deploy del Frontend
-Compila y ejecuta ScreenmatchApplication.java:
-bash
-Copiar código
+- Compila y ejecuta `ScreenmatchApplication.java`:
+```bash
 javac ScreenmatchApplication.java
 java ScreenmatchApplication
-El frontend ya podrá acceder a la información en la base de datos.
-Solución de Problemas
-No Funciona la Traducción:
+```
+- El frontend ya podrá acceder a la información en la base de datos.
 
-Verifica que la API key de OpenAI se ingresó correctamente en ConsultaChatGPT.java.
-Error al Consumir la API de OMDB:
+**Solución de Problemas**
+- No Funciona la Traducción:
+   - Verifica que la API key de OpenAI se ingresó correctamente en ConsultaChatGPT.java.
 
-Asegúrate de que la API key en Principal.java es válida y tienes conexión a Internet.
-Contribuciones
+- Error al Consumir la API de OMDB:
+   - Asegúrate de que la API key en Principal.java es válida y tienes conexión a Internet.
+
+**Contribuciones**
 ¡Las contribuciones son bienvenidas! Si encuentras un error o quieres mejorar algo, no dudes en abrir un pull request.
 
-Licencia
+**Licencia**
 Este proyecto está distribuido bajo la licencia MIT.
