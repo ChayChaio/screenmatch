@@ -1,6 +1,23 @@
 # ScreenMatch - Proyecto de Base de Datos y App Web
 
 Este proyecto permite cargar y gestionar una base de datos de **series** utilizando la API de OMDB, con traducción automática de sinopsis mediante la API de OpenAI. La aplicación incluye un **frontend** que depende de los datos previamente cargados para funcionar correctamente.
+Al acceder desde el frontend el usuario puede visibilizar los posters de las series de la base de datos separadas en 3 categorías.
+   1. Lanzamientos en Screenmatch: muestra las últimas 5 series en lanzar nuevos episodios.
+   2. Títulos populares en Screenmatch: muestra las 5 series mejor puntuadas.
+   3. Títulos en Screenmatch: muestra todas las series cargadas.
+
+También el usuario tiene la opción de filtrar series según su género mediante un menú desplegable al inicio de la página.
+
+Además de esto, al seleccionar el usuario una serie clickeando en su poster puede acceder a la información de dicha serie:
+   - Poster
+   - Título
+   - Promedio de evaluaciones
+   - Sinópsis
+   - Actores
+   - Temporadas
+
+Al clickear en el dropbox de temporadas uno puede elegir ver el detalle de todas, o de alguna en particular.
+Al seleccionar alguna opción aparecen los capítulos por temporadas con sus respectivos nombres.
 
 ---
 
@@ -21,6 +38,9 @@ Este proyecto permite cargar y gestionar una base de datos de **series** utiliza
    ```java
    private static final String API_KEY = "TU-API-KEY";
    ```
+**Base de datos**
+
+La conexión con la base de datos está configurada con variables de entorno que dirigen a una base de datos local. Esto se puede modificar a gusto del usuario dentro del archivo `application.properties`.
 
 **Uso con el Frontend**
 - Archivo principal: `ScreenmatchApplication.java`
